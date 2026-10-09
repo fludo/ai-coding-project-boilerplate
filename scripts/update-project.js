@@ -11,6 +11,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const MANIFEST_FILE = '.create-ai-project.json'
 const CLAUDELANG_FILE = '.claudelang'
+// To add a language later (e.g. French), add its code here — e.g. ['en', 'fr'] —
+// and keep it in sync with SUPPORTED_LANGUAGES in set-language.js.
 const SUPPORTED_LANGUAGES = ['en']
 
 // Categories that can be ignored
