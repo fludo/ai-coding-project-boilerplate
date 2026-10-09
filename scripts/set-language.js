@@ -4,6 +4,9 @@ import fs from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { copyDirectory, copyFile, removeDirectory } from './utils.js'
 
+// To add a language later (e.g. French), add its code here — e.g. ['en', 'fr'] —
+// and provide the matching sources: CLAUDE.<lang>.md, .claude/commands-<lang>,
+// .claude/agents-<lang>, and .claude/skills-<lang>.
 const SUPPORTED_LANGUAGES = ['en']
 const CONFIG_FILE = '.claudelang'
 
