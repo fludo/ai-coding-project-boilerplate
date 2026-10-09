@@ -1,7 +1,5 @@
 # AI Coding Project Boilerplate: A Starter Kit for Claude Code
 
-*Read this in other languages: [日本語](README.ja.md) | [简体中文](README.zh-CN.md)*
-
 [![TypeScript](https://img.shields.io/badge/TypeScript-7.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-24.15%2B-green?logo=node.js)](https://nodejs.org/)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Optimized-purple)](https://claude.ai/code)
@@ -29,8 +27,6 @@ cd my-project
 pnpm install
 claude
 ```
-
-Add `--lang=ja` or `--lang=zh-CN` to the first command to use Japanese or Simplified Chinese workflow instructions.
 
 ### Run your first change
 

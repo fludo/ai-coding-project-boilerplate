@@ -40,7 +40,7 @@ Commands:
   update             Update agent definitions in an existing project
 
 Options:
-  --lang=<language>  Set the project language (ja, en, or zh-CN; default: en)
+  --lang=<language>  Set the project language (en; default: en)
   --help, -h         Show this help message
 
 Update Options:
@@ -50,8 +50,6 @@ Update Options:
 
 Examples:
   npx create-ai-project my-project
-  npx create-ai-project my-project --lang=ja
-  npx create-ai-project my-project --lang=zh-CN
   npx create-ai-project update
   npx create-ai-project update --dry-run
   npx create-ai-project update --ignore skills project-context
@@ -66,8 +64,8 @@ Examples:
   for (const opt of options) {
     if (opt.startsWith('--lang=')) {
       language = opt.split('=')[1]
-      if (!['ja', 'en', 'zh-CN'].includes(language)) {
-        console.error(`❌ Invalid language: ${language}. Supported languages are: ja, en, zh-CN`)
+      if (!['en'].includes(language)) {
+        console.error(`❌ Invalid language: ${language}. Supported languages are: en`)
         process.exit(1)
       }
     }

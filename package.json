@@ -48,9 +48,7 @@
     "check:deps": "dpdm --no-warning --no-tree --exit-code circular:1 --ext .ts --exclude \"__tests__|.test.ts$|.spec.ts$\" --tsconfig ./tsconfig.json -T \"src/**/*.ts\"",
     "check:code": "pnpm run check && pnpm run check:unused && pnpm run check:deps && pnpm run build && pnpm run type-check:test",
     "check:all": "pnpm run check:code && pnpm run test",
-    "lang:ja": "node scripts/set-language.js ja",
     "lang:en": "node scripts/set-language.js en",
-    "lang:zh-CN": "node scripts/set-language.js zh-CN",
     "lang:status": "node scripts/set-language.js --status",
     "prepare": "husky",
     "type-check:test": "tsc -p tsconfig.test.json --noEmit"
