@@ -21,6 +21,9 @@
     "multi-agent"
   ],
   "author": "Shinsuke Kagawa",
+  "contributors": [
+    "Ludovic Favre (https://www.ludovicfavre.ch)"
+  ],
   "license": "MIT",
   "type": "module",
   "repository": {
